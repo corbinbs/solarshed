@@ -1,0 +1,3 @@
+prometheus_client==0.1.0
+pyserial==3.4
+MinimalModbus==0.7
