@@ -1,0 +1,11 @@
+[Unit]
+Description=solarshed
+
+[Service]
+Restart=always
+RestartSec=1
+TimeoutStartSec=0
+ExecStart=/home/pi/venv-solarshed/bin/python -m solarshed.server
+
+[Install]
+WantedBy=multi-user.target
