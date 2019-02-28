@@ -1,4 +1,4 @@
-SolarShed
+solarshed
 =========
 
 A Python library to help monitor solar charge controllers typically used in
@@ -11,6 +11,9 @@ solarshed.server module.  This project has been in use for several months on a
 Raspberry Pi connected to a Renogy Rover solar controller.  This off the grid
 solar installation is mobile on a trailer and links up to WiFi for monitoring
 and alerting via Prometheus (with solar production visualized using Grafana)
+
+.. image:: images/solarshed_front.jpg
+    :alt: Solarshed Trailer (front)
 
 
 Supported Solar Charge Controllers
