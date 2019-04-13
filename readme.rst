@@ -28,7 +28,7 @@ the 4 100w 12v panels (wired in parallel for 400w total):
     :alt: Solarshed Wiring Sketch
 
 In addition to the panels, there are 4 100Ah 12v gel batteries also wired in parallel
-for 400Ah storage capacity. 200Ah is usable before battery back hits 50% capacity and
+for 400Ah storage capacity. 200Ah is usable before battery bank hits 50% capacity and
 protections kick in to protect battery life.  A DC to AC power inverter is directly
 wired to the battery bank (with a slow blow fuse inline on the positive connection).
 A set of 4 USB charging ports is also available to avoid the need of the power inverter
@@ -135,9 +135,9 @@ use it or modify it as desired.  Check out the `Grafana`_ website for more insta
 information.
 
 
-_`Amazon Smile`: https://smile.amazon.com/ch/46-3997463
-_`hub-ology`: https://hub-ology.org
-_`parts list`: https://smile.amazon.com/hz/wishlist/ls/3B032AJ0FD01N?&sort=default
-_`Prometheus Python client`: https://github.com/prometheus/client_python
-_`Prometheus`: https://prometheus.io/
-_`Grafana`: https://grafana.com/
+.. _`Amazon Smile`: https://smile.amazon.com/ch/46-3997463
+.. _`hub-ology`: https://hub-ology.org
+.. _`parts list`: https://smile.amazon.com/hz/wishlist/ls/3B032AJ0FD01N?&sort=default
+.. _`Prometheus Python client`: https://github.com/prometheus/client_python
+.. _`Prometheus`: https://prometheus.io/
+.. _`Grafana`: https://grafana.com/
