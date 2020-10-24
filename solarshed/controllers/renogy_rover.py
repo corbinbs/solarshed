@@ -38,7 +38,7 @@ class RenogyRover(minimalmodbus.Instrument):
         """
         Read the controller's model information
         """
-        return self.read_string(12, numberOfRegisters=8)
+        return self.read_string(12, number_of_registers=8)
 
     def system_voltage_current(self):
         """
