@@ -4,10 +4,6 @@ Driver for the Renogy Rover Solar Controller using the Modbus RTU protocol
 
 import minimalmodbus
 
-minimalmodbus.BAUDRATE = 9600
-minimalmodbus.TIMEOUT = 0.5
-
-
 BATTERY_TYPE = {
     1: 'open',
     2: 'sealed',
@@ -31,14 +27,16 @@ class RenogyRover(minimalmodbus.Instrument):
     Communicates using the Modbus RTU protocol (via provided USB<->RS232 cable)
     """
 
-    def __init__(self, portname, slaveaddress):
+    def __init__(self, portname, slaveaddress, baudrate=9600, timeout=0.5):
         minimalmodbus.Instrument.__init__(self, portname, slaveaddress)
+        self.serial.baudrate = baudrate
+        self.serial.timeout = timeout
 
     def model(self):
         """
         Read the controller's model information
         """
-        return self.read_string(12, number_of_registers=8)
+        return self.read_string(12, numberOfRegisters=8)
 
     def system_voltage_current(self):
         """
