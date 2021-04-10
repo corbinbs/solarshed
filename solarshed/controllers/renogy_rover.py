@@ -24,7 +24,7 @@ CHARGING_STATE = {
 
 class RenogyRover(minimalmodbus.Instrument):
     """
-    Communicates using the Modbus RTU protocol (via provided USB<->RS232 cable)
+    Communicates using the Modbus RTU protocol (via USB<->RS232 or USB<->RS485 cable)
     """
 
     def __init__(self, portname, slaveaddress, baudrate=9600, timeout=0.5):
@@ -40,7 +40,7 @@ class RenogyRover(minimalmodbus.Instrument):
 
     def system_voltage_current(self):
         """
-        Read the controler's system voltage and current
+        Read the controller's system voltage and current
         Returns a tuple of (voltage, current)
         """
         register = self.read_register(10)
@@ -50,7 +50,7 @@ class RenogyRover(minimalmodbus.Instrument):
 
     def version(self):
         """
-        Read the controler's software and hardware version information
+        Read the controller's software and hardware version information
         Returns a tuple of (software version, hardware version)
         """
         registers = self.read_registers(20, 4)

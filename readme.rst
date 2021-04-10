@@ -56,9 +56,16 @@ Supported Solar Charge Controllers
 ----------------------------------
 
 * **Renogy Rover**
-  The Renogy Rover is currently the only supported charge controller.
-  New charge controllers should be added to the solarshed.controllers
-  package.
+  The Renogy Rover was previously shipped with an RS232 to USB cable in the box.
+  This is no longer the case and the cable has been discontinued. The wiring of the cable is non standard so it is hard to find one that works.
+  It is possible to wire a custom cable.
+* **Renogy Rover Elite**
+  Renogy sell a RS485 to USB cable that works this controller. It is not included with the product.
+  https://www.renogy.com/rs485-to-usb-serial-cable/
+
+These are currently the only supported charge controllers.
+New charge controllers should be added to the solarshed.controllers
+package.
 
 
 Charge Controller module contributions are welcome if you have access
