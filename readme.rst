@@ -141,3 +141,10 @@ information.
 .. _`Prometheus Python client`: https://github.com/prometheus/client_python
 .. _`Prometheus`: https://prometheus.io/
 .. _`Grafana`: https://grafana.com/
+
+Running in a Docker container
+-----------------------------
+
+::
+
+      docker run --name solarshed -d -p 5000:5000 --device /dev/ttyUSB0:/dev/ttyUSB0 --restart=always --privileged ghcr.io/{user}/solarshed
